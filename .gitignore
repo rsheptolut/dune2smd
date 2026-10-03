@@ -1,0 +1,23 @@
+# ROMs: bring your own (see README)
+*.gen
+*.bin.orig
+variants/*
+!variants/.gitkeep
+
+# generated from the ROM by `make setup` (never commit these)
+src/*.s
+src/*.inc
+!src/autoplay.inc
+src/files.txt
+src/bin/
+assets/*
+!assets/manifest.json
+!assets/probe.json
+
+# build output and local tools
+build/
+__pycache__/
+tools/emu/build/
+tools/med/mednafen/
+*.st
+*.log
